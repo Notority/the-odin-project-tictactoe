@@ -1,0 +1,38 @@
+.game-card {
+  width: 350px;
+  background: #1f1f2e;
+  border-radius: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(3, 90px);
+  gap: 10px;
+}
+
+.cell {
+  background: #2c2c3f;
+  border-radius: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cell:hover {
+  background: #3c3c55;
+  transform: scale(1.05);
+}
+
+.cell.X {
+  color: #0dcaf0;
+}
+
+.cell.O {
+  color: #ffc107;
+}
